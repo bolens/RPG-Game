@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokémon Battle Royale</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha256-m/h/cUDAhf6/iBRixTbuc8+Rg2cIETQtPcH9D3p2Kg0=" crossorigin="anonymous" />  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha256-DiWJXXyq81WlPRnDfGmgYZj2aOVCKyEdJ1l+2TmDuAs=" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+  <main id="gameBoard">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Pokémon Battle Royale</h1>
+        <button type="button" id="gameStart" class="btn btn-success">Begin battle</button>
+        <button type="button" id="reset" class="btn btn-danger">Reset battle</button>
+      </div>
+    </div>
+    <div class="container">
+      <div id="characters">
+        <div class="row">
+          <div class="col-md-4">
+            <div id="charizard" class="character" data-character="charizard">
+              <img src="./assets/img/charizard.png" alt="charizard"/>
+              <div class="stats">
+                <div class="stat health">
+                  Health:
+                  <span class="amount"></span>
+                </div>
+                <div class="stat attack">
+                  Attack:
+                  <span class="amount"></span>
+                </div>
+                <div class="stat counter">
+                  Counter:
+                  <span class="amount"></span>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="blastoise" class="character" data-character="blastoise">
+              <img src="./assets/img/blastoise.png" alt="blastoise"/>
+              <div class="stats">
+                <div class="stat health">
+                  Health:
+                  <span class="amount"></span>
+                </div>
+                <div class="stat attack">
+                  Attack:
+                  <span class="amount"></span>
+                </div>
+                <div class="stat counter">
+                  Counter:
+                  <span class="amount"></span>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="venosaur" class="character" data-character="venosaur">
+              <img src="./assets/img/venosaur.png" alt="venosaur"/>
+              <div class="stats">
+                <div class="stat health">
+                  Health:
+                  <span class="amount"></span>
+                </div>
+                <div class="stat attack">
+                  Attack:
+                  <span class="amount"></span>
+                </div>
+                <div class="stat counter">
+                  Counter:
+                  <span class="amount"></span>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="messages">
+        <p></p>
+      </footer>
+    </div>
+  </main>
+  <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-color: rgb(190, 190, 190);
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+}
+h1 {
+  font-size: 3em;
+}
+h3 {
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.jumbotron {
+  text-align: center;
+}
+#characters {
+
+}
+.character {
+  position: relative;
+  z-index: 5;
+}
+.stats {
+  border: 5px solid #302D2D;
+  padding: 30px;
+  margin: 10px;
+}
+.stat {
+  position: relative;
+}
+.amount {
+  position: absolute;
+  right: 0px;
+}
+.overlay {
+  z-index: 1;
+  position: absolute;
+  padding-top: 125%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  transform: translateY(2.5%);
+}
+.overlay.user {
+border: 5px solid green;
+}
+.overlay.opponent {
+  border: 5px solid red;
+}
+.overlay.defeated:after {
+  content: 'X';
+  color: red;
+  font-size: 10em;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#charizard .stats {
+  color: #30556A;
+  background-color: #DE5938;
+}
+#venosaur .stats {
+  color: #B33B4A;
+  background-color: #5DADA5;
+}
+#blastoise .stats {
+  color: #FFFFFF;
+  background-color: #2564AA;
+}
+
+#messages {
+  padding: 30px;
+  border-top: 2px solid #000000;
+  text-align: center;
+  font-size: 2em;
+}
